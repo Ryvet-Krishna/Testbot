@@ -1,36 +1,57 @@
 {
-    "name": "Jarvis-md",
-    "version": "3.5.0",
-    "description": "A simple WhatsApp Bot Based On WhiskeySockets/Baileys",
-    "main": "index.js",
-    "scripts": {
-        "postinstall": "node -e \"try { require('sharp') } catch (e) { process.exit(1); }\" || npm install sharp@0.32.6 --no-save",
-        "start": "pm2 start . --attach --name Jarvis-md",
-        "stop": "pm2 stop Jarvis-md"
-    },
-    "engines": {
-        "node": ">=18.0.0 <=24.x"
-    },
-    "license": "MIT",
-    "dependencies": {
-        "@whiskeysockets/baileys": "^6.7.17",
-        "async-lock": "^1.4.1",
-        "browser-id3-writer": "^4.4.0",
-        "cheerio": "^1.0.0",
-        "node-cron": "^3.0.3",
-        "jarvis-md": "^1.0.7",
-        "jimp": "^0.16.1",
-        "fluent-ffmpeg": "^2.1.2",
-        "form-data": "^4.0.0",
-        "link-preview-js": "^3.0.4",
-        "libphonenumber-js": "^1.12.6",
-        "node-webpmux": "^3.2.0",
-        "pm2": "^5.4.2",
-        "audio-decode": "^2.2.2",
-        "sharp": "0.32.6",
-        "pg": "^8.7.3",
-        "sequelize": "^6.21.4",
-        "simple-git": "^3.20.0",
-        "sqlite3": "^5.0.11"
-    }
+  "name": "whatsapp-bot",
+  "version": "1.0.0",
+  "description": "simple multi device WhatsApp Bot.",
+  "main": "./index.js",
+  "scripts": {
+    "start": "pm2 start . --attach --name whatsapp-bot",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akshay-Eypz/whatsapp-bot.git"
+  },
+  "keywords": [
+    "bot",
+    "Akshay",
+    "WhatsApp",
+    "Eypz"
+  ],
+  "author": "Akshay",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Akshay-Eypz/whatsapp-bot/issues"
+  },
+  "homepage": "https://github.com/Akshay-Eypz/whatsapp-bot#readme",
+  "dependencies": {
+    "@adiwajshing/keyed-db": "^0.2.4",
+    "axios": "^1.7.7",
+    "@adiwajshing/baileys": "npm:baileys-pro",
+    "baileys": "npm:baileys-pro",
+    "browser-id3-writer": "^4.4.0",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.4.5",
+    "file-type": "^16.5.3",
+    "fluent-ffmpeg": "^2.1.2",
+    "form-data": "^4.0.0",
+    "got": "^11.8.2",
+    "jimp": "^0.16.13",
+    "jsdom": "^22.1.0",
+    "jsqr": "^1.4.0",
+    "node-webpmux": "^3.1.7",
+    "node-cron": "^3.0.3",
+    "node-fetch": "^2.7.0",
+    "pg": "^8.11.5",
+    "pino": "^8.14.1",
+    "pm2": "^5.3.0",
+    "qrcode": "^1.5.3",
+    "qrcode-reader": "^1.0.4",
+    "say": "^0.16.0",
+    "sequelize": "^6.23.0",
+    "simple-git": "^3.24.0",
+    "socket.io-client": "^4.7.5",
+    "sqlite3": "^5.1.7",
+    "stream-buffers": "^3.0.2",
+    "yt-search": "^2.6.1"
+  }
 }
