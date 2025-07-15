@@ -2,7 +2,7 @@ FROM node:20-alpine
 
 RUN apk add --no-cache git ffmpeg bash
 
-RUN git clone https://github.com/ryv3t/Testbot /root/bot/
+RUN git clone https://github.com/Ryvet-Krishna/Testbot /root/bot/
 
 WORKDIR /root/bot/
 
