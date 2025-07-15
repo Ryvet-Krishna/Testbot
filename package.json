@@ -1,5 +1,5 @@
 {
-  "name": "whatsapp-bot",
+  "name": "Testbot",
   "version": "1.0.0",
   "description": "simple multi device WhatsApp Bot.",
   "main": "./index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Akshay-Eypz/whatsapp-bot.git"
+    "url": "git+https://github.com/Ryvet-Krishna/Testbot.git"
   },
   "keywords": [
     "bot",
@@ -17,12 +17,12 @@
     "WhatsApp",
     "Eypz"
   ],
-  "author": "Akshay",
+  "author": "Krishna",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/Akshay-Eypz/whatsapp-bot/issues"
+    "url": "https://github.com/Ryvet-Krishna/issues"
   },
-  "homepage": "https://github.com/Akshay-Eypz/whatsapp-bot#readme",
+  "homepage": "https://github.com/Ryvet-Krishna/Testbot",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
     "axios": "^1.7.7",
