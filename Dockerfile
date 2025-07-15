@@ -1,12 +1,5 @@
-FROM node:20-alpine
-
-RUN apk add --no-cache git ffmpeg bash
-
-RUN git clone https://github.com/Ryvet-Krishna/Testbot /root/bot/
-
-WORKDIR /root/bot/
-
-RUN npm install --legacy-peer-deps
-RUN npm install sqlite3
-
-CMD ["npm", "start"]
+FROM quay.io/loki-xer/jarvis-md:latest
+RUN git clone https://github.com/Ryvet-Krishna/Testbot /root/testbot/
+WORKDIR /root/testbot/
+RUN yarn install --network-concurrency 1
+CMD ["node", "index.js"]
