@@ -4,7 +4,7 @@
   "description": "simple multi device WhatsApp Bot.",
   "main": "./index.js",
   "scripts": {
-    "start": "pm2 start . --attach --name whatsapp-bot",
+    "start": "pm2 start . --attach --name Testbot",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
